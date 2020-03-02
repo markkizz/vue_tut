@@ -1,6 +1,10 @@
 <template>
   <div>
     <!-- <h3>Clock: {{timeNow}}</h3> -->
+    <!-- 
+      open data for parent accessing to Chlid data
+      v-bind:PropsName="ComponentData" 
+    -->
     <slot :time="timeNow"></slot>
   </div>
 </template>
