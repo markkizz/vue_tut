@@ -5,7 +5,7 @@
             <h5>Total: {{ total }}</h5>
         </div>
         <hr>
-        <div class="row" v-for="registration in registrations">
+        <div class="row" v-for="registration in registrations" :key="registration">
             <h4>{{ registration.name }}</h4>
             <span @click="unregister(registration)">(Unregister)</span>
             <div class="date">{{ registration.date }}</div>
@@ -15,11 +15,10 @@
 
 <script>
     export default {
-        props: ['registrations'],
         methods: {
-            unregister(registration) {
-                this.$emit('userUnregistered', registration);
-            }
+            // unregister(registration) {
+            //     this.$emit('userUnregistered', registration);
+            // }
         },
         computed: {
             total() {

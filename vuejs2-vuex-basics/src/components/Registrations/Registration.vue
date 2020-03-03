@@ -11,12 +11,11 @@
 
 <script>
     export default {
-        props: ['users'],
         methods: {
-            registerUser(user) {
-                this.$emit('userRegistered', user);
-                user.registered = true;
-            }
+            // registerUser(user) {
+            //     this.$emit('userRegistered', user);
+            //     user.registered = true;
+            // }
         }
     }
 </script>
