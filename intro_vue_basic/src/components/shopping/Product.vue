@@ -27,11 +27,17 @@
         :class="{ disabledButton: !inStock }"
       >Add to cart</button>
     </div>
+    <ProductReview />
   </div>
 </template>
 
 <script>
+import ProductReview from './ProductReview'
+
 export default {
+  components: {
+    ProductReview
+  },
   name: "Product",
   props: {
     premium: {
@@ -76,7 +82,7 @@ export default {
     },
     updateProduct(variantImageSelected) {
       this.selectedVariant = variantImageSelected;
-    }
+    },
   },
   computed: {
     title() {
@@ -101,17 +107,6 @@ export default {
 </script>
 
 <style scoped>
-body {
-  font-family: tahoma;
-  color: #282828;
-  margin: 0px;
-}
-
-.nav-bar {
-  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
-  height: 60px;
-  margin-bottom: 15px;
-}
 
 .product {
   display: flex;
