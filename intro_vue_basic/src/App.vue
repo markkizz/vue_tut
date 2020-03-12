@@ -1,21 +1,22 @@
 <template>
   <div id="app">
     <!-- <BasicVue /> -->
-    <Shopping />
+    <!-- <Shopping /> -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import BasicVue from './components/basicvue/Index'
-import Shopping from './components/shopping/Index'
+// import Shopping from './components/shopping/Index'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     // BasicVue
-    Shopping
+    // Shopping
   },
 
 }
