@@ -1,12 +1,25 @@
 <template>
   <div>
-    <h1>Fevorite food</h1>
+    <h3>Favorite food</h3>
+    {{debug(food)}}
   </div>
 </template>
 
 <script>
-export default {
+import {mapState} from 'vuex'
 
+export default {
+  methods: {
+    debug(e) {
+      console.log(e)
+    }
+  },
+  computed: {
+    ...mapState(['food']),
+    // log() {
+    //   return console.log({...mapState(['food'])})
+    // }
+  }, 
 }
 </script>
 

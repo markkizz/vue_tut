@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Fevorite restaurant</h3>
+    <h3>Favorite restaurant</h3>
   </div>
 </template>
 
