@@ -28,7 +28,7 @@ export default {
     },
     userUnregistered(registration) {
       const user = this.users.find(user => {
-        return user.id == registration.userId;
+        return user.id === registration.userId;
       });
       user.registered = false;
       this.registrations.splice(this.registrations.indexOf(registration), 1);
