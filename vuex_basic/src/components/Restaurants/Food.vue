@@ -1,13 +1,14 @@
 <template>
   <div>
     <h3>Favorite food</h3>
-    
+    {{debug(restaurant)}}
   </div>
 </template>
 
 <script>
+// import {mapGetters} from 'vuex'
 import { createNamespacedHelpers } from 'vuex'
-const { mapState } = createNamespacedHelpers('restaurants')
+const { mapState, mapGetters } = createNamespacedHelpers('restaurants')
 
 export default {
   methods: {
@@ -16,16 +17,15 @@ export default {
     }
   },
   computed: {
-    ...mapState({
-      food: state => state.foodLists
-    })
-    // ...mapState('restaurants', ['foodLists'])
+    ...mapGetters(['food', 'restaurant']),
+    ...mapState(['counter', 'foodLists'])
   }
   ,
     // log() {
     //   return console.log({...mapState(['food'])})
     // }
-  
+  mounted() {
+  },
 }
 </script>
 

@@ -1,7 +1,8 @@
 
 const state = {
   foodLists: ['ramen'],
-  restaurantLists: ['Ramen res']
+  restaurantLists: ['Ramen res'],
+  counter: 0
 }
 
 export default state

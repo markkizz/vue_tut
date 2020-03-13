@@ -4,10 +4,9 @@
  */
 
 const getters = {
-  food(state) {
-    return state.foodLists
-  },
-  restaurant: state => state.restaurantLists
+  food: state => state.foodLists,
+  restaurant: state => state.restaurantLists,
+  counter: state => state.counter
 }
 
 export default getters

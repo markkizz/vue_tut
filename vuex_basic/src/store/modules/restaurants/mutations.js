@@ -9,6 +9,9 @@ const mutations = {
   },
   addRestaurant(state, restaurant) {
     state.restaurantLists = [...state.restaurantLists, restaurant]
+  },
+  increasing(state, amount) {
+    state.couter += amount
   }
 }
 
