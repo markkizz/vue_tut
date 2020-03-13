@@ -4,7 +4,9 @@
  */
 
 const getters = {
-  food: state => state.foodLists,
+  food(state) {
+    return state.foodLists
+  },
   restaurant: state => state.restaurantLists
 }
 
